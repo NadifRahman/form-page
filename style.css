@@ -7,13 +7,16 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    align-items: stretch;
+    height: 100vh;
+}
 .left {
+    flex: 1 1 400px;
     background: no-repeat url(images/greenery.jpg);
     background-size: 100vh;
-    height: 100vh;
-    width: clamp(20vw, 500px, 30vw);
     overflow: hidden;
-    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,6 +34,16 @@
     font-size: 1.5rem;
     overflow: hidden;
 
+}
+.right {
+    flex: 1 0 80vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    background-color: #f9fafb;
+    flex: 1;
 }
 
 
